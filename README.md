@@ -1,5 +1,6 @@
  [![CSS Validator](https://github.com/jseabol1/jseabol1.github.io/actions/workflows/CSSValidate.yml/badge.svg)](https://github.com/jseabol1/jseabol1.github.io/actions/workflows/CSSValidate.yml)
  [![HTML Validator](https://github.com/jseabol1/jseabol1.github.io/actions/workflows/HTMLValidator.yml/badge.svg)](https://github.com/jseabol1/jseabol1.github.io/actions/workflows/HTMLValidator.yml)
+ [![Site Status](https://img.shields.io/website?label=Site%20Status&url=https%3A%2F%2Fwww.seabolt.dev)](https://www.seabolt.dev)
  ![Last Commit](https://img.shields.io/github/last-commit/jseabol1/jseabol1.github.io?color=cyan&style=flat)
  ![Contributors](https://img.shields.io/github/contributors/jseabol1/jseabol1.github.io)
  
@@ -23,5 +24,4 @@
 Todo
 - [x] Start
 - [ ] Everything else
-
 
