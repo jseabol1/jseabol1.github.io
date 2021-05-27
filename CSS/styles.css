@@ -1,0 +1,421 @@
+/* 
+Jeremiah Seabolt
+Styles.css
+2021.04.30
+ */
+
+ /* RESET */
+ *{
+     border: 0;
+     padding: 0;
+     margin: 0;
+     background-color: rgb(0, 30, 0);
+     color: whitesmoke;
+     font-family: "Anonymous Pro", Courier, monospace;
+     
+
+     
+ }
+
+
+ /* Style rules for homepage */
+
+ 
+    
+     
+ 
+
+ 
+
+ .homepage {
+     width: 75vw;
+     height: 75vh;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border: 5px solid white;
+ }
+
+ .heroImage {
+     width: 100%;
+     height: 100%;
+     background-position:center ;
+     background-repeat: no-repeat;
+     position: relative;
+     background-size: cover;
+
+     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../Images/background.jpg");
+    
+ }
+
+ .heroText {
+    position: fixed;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 75%;
+    height: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    text-align: center;
+}
+
+.heroText h1,h3 {
+    background-color: transparent;
+    font-family: "Lobster", cursive ;
+    letter-spacing: 5px;
+    
+}
+.heroText h1 {
+    font-size: 4rem;
+    color: rgb(215, 235, 215);
+}
+
+.heroText ul {
+    list-style: none;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li a:hover {
+    color: turquoise;
+}
+
+/* Style rules for desktop nav */
+.desktopNav {
+    display: none;
+    flex-direction: row;
+    flex: 1;
+    width: 80%;
+    margin: auto;
+    
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 5px;
+    list-style: none;
+}
+
+nav li {
+    padding: 0 5px;
+    flex: 1 ;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+/* Styles for Gallery Content */
+
+#gallery {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    
+    gap: 2em;
+    box-sizing: border-box;
+    max-width: 80%;
+    margin: auto;
+    
+}
+
+.galleryImage * {
+    margin: auto;
+}
+
+
+
+.galleryImage img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid whitesmoke;
+    
+}
+
+h1 {
+    text-align: center;
+    padding: 2.5rem;
+    font-family: "Lobster", cursive;
+}
+
+/* Style rules for footer */
+footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    padding: 10px 0 0 0 ;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* Style rules for Trails page (List w maps) */
+
+#trailList {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#trailList iframe {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.trailListItem {
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.trailListItem dt {
+    font-size: 1.2em;
+    padding: 5px 0;
+}
+
+.trailListItem dd {
+    padding: 5px 0;
+}
+    
+    
+    
+
+
+/* Style rules for LNT  */
+
+/* Styles for LNT Articles */
+article {
+    padding: 5px;
+    border: 3px solid rgba(100, 100, 100, .25);
+    box-shadow: 5px 5px rgba(00, 255, 255, .3);
+
+}
+
+article h1 {
+    text-align: center;
+    /* text-shadow: 1px 0px rgba(00, 255, 255, .3); */
+    font-family: "Anonymous Pro", sans-serif;
+}
+
+aside p {
+    color: #fff;
+    font-size: 1em;
+    
+}
+
+.lnt {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+    
+}
+
+.lnt * {
+    background-color: darkslategrey;
+}
+
+/* Style rules for Forms */
+
+form {
+    width: 80%;
+    margin: auto;
+}
+
+form select,input,textarea,button {
+    
+    width: 100%;
+    color:white;
+    border: 1px solid white;
+    background:hsl(0, 0%, 10%);
+    padding: 15px 10px;
+    margin: 1em 0;
+    
+}
+
+/* Style rules for media */
+
+.myJams {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 15vh;
+    padding-top: 5vh;
+    
+
+}
+
+.myJams p,h3,audio{
+    text-align: center;
+    font-family: "Anonymous Pro", sans-serif;
+    width: 100%;
+    padding: 5px;
+
+}
+
+
+
+/* Resources media queries */
+
+.resources {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    list-style: none;
+    padding-bottom: 25px;
+    
+
+}
+
+.resources * {
+    margin: 0;
+    /* width: 100%; */
+    list-style: none;
+    padding: 15px;
+}
+
+/* Style rules for hamburger menu */
+
+.mobileNav {
+    position: sticky;
+    top: 0;
+    border-radius: 50%;
+}
+.mobileNav a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 3%;
+    }
+
+.mobileNav a:hover {
+    background-color: rgb(0, 60, 0);
+}
+
+.mobileNav a.menuIcon {
+    position: absolute;
+    right: 5;
+    top: 5;
+    padding:15px;
+    display: block;
+    
+}
+
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 681px), print {
+    
+    
+    /* style rules for gallery content */
+    #gallery{
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    /* Style for TrailList */
+
+    /* #trailList iframe {
+        max-width: 500px ;
+        height: auto;
+    }
+
+    .trailListItem {
+        
+        max-width: 30%;
+    }
+    #trailList {
+        flex-direction: row;
+        
+    } */
+
+    
+
+
+
+    /* style rules for Form Content */
+    .formLines  {
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    /* Style rules for media */
+    .myJams {
+        display: flex;
+
+        padding-bottom: 10vh;
+    }
+
+
+
+    /* Style rules for lnt */
+    .lnt {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        width: 80%;
+        margin: auto;
+    }
+
+    /* Nav Switchup */
+    .desktopNav {
+        display: flex;
+    }
+
+    .mobileNav {
+        display: none;
+    }
+}
+
+    
+
+
+
+
+
+
+
+    /* Media Query for Desktop Viewport */
+@media screen and (min-width: 768px), print {
+    
+    
+    /* style rules for gallery content */
+    #gallery{
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+
+    /* Style rules for trails page */
+    /* #trailList {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    } */
+}
+
+
+@media print {
+        * {
+            color: black;
+            background-color: white;
+        }
+        
+}
