@@ -33,4 +33,5 @@ jobs:
         with:          
           # Checks css as well
           css: true
+          root: /
          
