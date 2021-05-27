@@ -1,4 +1,5 @@
  [![Validated](https://github.com/jseabol1/jseabol1.github.io/actions/workflows/Validate.yml/badge.svg)](https://github.com/jseabol1/jseabol1.github.io/actions/workflows/Validate.yml)
+ [![HTML Validator](https://github.com/jseabol1/jseabol1.github.io/actions/workflows/HTMLValidator.yml/badge.svg)](https://github.com/jseabol1/jseabol1.github.io/actions/workflows/HTMLValidator.yml)
  ![Last Commit](https://img.shields.io/github/last-commit/jseabol1/jseabol1.github.io?color=cyan&style=flat)
  ![Contributors](https://img.shields.io/github/contributors/jseabol1/jseabol1.github.io)
  
