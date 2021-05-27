@@ -6,7 +6,7 @@
  
 ---
 
-<h2 align="center"> <b><em> Nano Portfolio </em></b> </h2>
+<h2 align="center"> <b><em> My Nano Portfolio </em></b> </h2>
 <p align="center"> A GitHub Pages hosted portfolio </br> in responsive HTML & CSS. </p>
 
 ---
