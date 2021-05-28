@@ -50,11 +50,11 @@
 .heroText h1,
 h3 {
 	background-color: transparent;
-	font-size: 1.5vw;
+	font-size: 1.25vw;
 	letter-spacing: 5px;
 }
 .heroText h1 {
-	font-size: 3.75vw;
+	font-size: 3.25vw;
 	padding-bottom: 2vh;
 }
 
@@ -80,8 +80,27 @@ li a:hover {
 	color: cyan;
 }
 
+/* Fix medium screens a little */
+@media only screen and (max-width: 1920px) {
+	
+	.heroText h1 {
+		font-size: 4vw;
+	}
+
+	.heroText h3 {
+		font-size: 2vw;
+	}
+
+	.heroText li a {
+		font-size: 1.75vw;
+	}
+}
+
+
+
+
 /* Fix mobile a little */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 	.homepage {
 		width: 80vw;
 		height: 75vh;
@@ -89,6 +108,7 @@ li a:hover {
 
 	.heroText ul {
 		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.heroText h1 {
