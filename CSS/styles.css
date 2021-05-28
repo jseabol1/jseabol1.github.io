@@ -82,10 +82,10 @@ li a:hover {
 
 a {
 	text-decoration: none;
+}
 
 /* Fix medium screens a little */
 @media only screen and (max-width: 1920px) {
-	
 	.heroText h1 {
 		font-size: 4vw;
 	}
@@ -98,9 +98,6 @@ a {
 		font-size: 1.75vw;
 	}
 }
-
-
-
 
 /* Fix mobile a little */
 @media only screen and (max-width: 800px) {
