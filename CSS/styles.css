@@ -28,7 +28,11 @@ a {
 	padding-top: 1.5rem;
 }
 
-a:link, a:visited {
+a:link {
+	color: black;
+}
+
+a:visited {
 	color: black;
 }
 
