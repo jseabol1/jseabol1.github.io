@@ -1,132 +1,56 @@
+/* https://stackoverflow.com/questions/3200249/html-list-style-type-dash */
+
 /* RESET */
 * {
 	border: 0;
 	padding: 0;
-	margin: 0;
-	background-color: black;
-	color: white;
-	font-family: "Anonymous Pro", Courier, monospace;
-}
-
-/* Style rules for homepage */
-
-.homepage {
-	width: 50vw;
-	height: 50vh;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border: 10px solid rgba(0, 255, 255, .65);
-}
-
-.heroImage {
-	width: 100%;
-	height: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
-	background-size: cover;
-
-	/* background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../Images/background.jpg"); */
-	/* No background image to set right now */
-}
-
-.heroText {
-	position: fixed;
 	margin: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	width: 75%;
-	height: 75%;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	max-width: 800px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	letter-spacing: 1rem;
+	line-height: 200%;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: transparent;
-	text-align: center;
-}
-
-.heroText h1,
-h3 {
-	background-color: transparent;
-	font-size: 1.25vw;
-	letter-spacing: 5px;
-}
-.heroText h1 {
-	font-size: 3.25vw;
-	padding-bottom: 2vh;
-}
-
-.title {
-	width: 100%;
-}
-
-.heroText ul {
-	list-style: none;
-	display: flex;
-	background-color: transparent;
-	justify-content: space-evenly;
-	width: 75%;
-	margin: 0 auto;
-}
-
-li a {
-	text-decoration: none;
-	font-size: 1vw;
-}
-
-li a:hover {
-	color: cyan;
+	user-select: none;
 }
 
 a {
-	text-decoration: none;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+	padding-top: 1.5rem;
 }
 
-/* Fix medium screens a little */
-@media only screen and (max-width: 1920px) {
-	.heroText h1 {
-		font-size: 4vw;
-	}
-
-	.heroText h3 {
-		font-size: 2vw;
-	}
-
-	.heroText li a {
-		font-size: 1.75vw;
-	}
+a:visited {
+	color: black;
 }
 
-/* Fix mobile a little */
-@media only screen and (max-width: 800px) {
-	.homepage {
-		width: 80vw;
-		height: 75vh;
-	}
-
-	.heroText ul {
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
-	.heroText h1 {
-		font-size: 7vw;
-	}
-
-	.heroText h3 {
-		font-size: 4vw;
-	}
-
-	.heroText li a {
-		font-size: 3.5vw;
-	}
+a:hover {
+	transform: scale(1.05);
+	text-decoration: bold;
 }
 
-@media print {
-	* {
-		color: black;
-		background-color: white;
+ul.links {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1em;
+}
+ul.links > li:before {
+	display: inline-block;
+	content: "-";
+	width: 1em;
+	margin-left: -1em;
+}
+
+@media screen and (max-width: 475px) {
+	body {
+		font-size: 1.5rem;
 	}
 }
